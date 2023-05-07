@@ -1,0 +1,141 @@
+body {
+  background-image: url('/static_2/image6.png');
+  background-repeat: repeat-y;
+  background-size: cover; 
+  font-size: 20px;
+  font-weight: bold;
+  background-color: rgba(100, 100, 100, 0.0); /* 背景色と透明度の設定 */
+  text-align: center;
+  color: #fbf4f4;
+  text-shadow: 2px 5px 4px rgba(0, 0, 0, 0.9);
+  font-family: 'Comic Sans MS', cursive;
+}
+
+h2 {
+  color: #e8dede;
+  font-weight: bold;
+  font-size: 40px;
+  text-shadow: 2px 5px 4px rgba(0, 0, 0, 0.9);
+  font-family: 'Comic Sans MS', cursive;
+}
+
+.fieldsmol, .field {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #161816;
+  margin-bottom: 10px;
+  color: #fbf4f4;
+  background-color: rgba(100, 100, 100, 0.5);
+  font-family: 'Comic Sans MS', cursive;
+}
+
+.field {
+  height: 200px;
+  color: #e8dede;
+  background-color: rgba(100, 100, 100, 0.5); 
+  font-family: 'Comic Sans MS', cursive;
+}
+
+
+.sendepisode {
+  background-color: #36b536;
+  color: #272020;
+  padding: 10px 25px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.8s;
+  font-size: 20px; /* Adjust the font size as desired */
+}
+
+.sendepisode:hover {
+  background-color: #ece4e4;
+}
+
+.image-div {
+  margin-top: 30px;
+  display: inline-block;
+  text-align: center;
+}
+
+.image-container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  
+  height: 400px;
+  width: 512px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.image-wrapper {
+  text-align: center;
+}
+
+.image-wrapper img {
+  width: 256px;
+  height: 256px;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slideInFromLeft {
+  animation: slideInFromLeft 0.5s ease-out;
+}
+
+.star {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #15cb4c;
+  animation: shootingStar 1s ease-out;
+}
+
+@keyframes shootingStar {
+  0% {
+    transform: translateX(0) translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100px) translateY(-100px);
+    opacity: 0;
+  }
+}
+
+.waitanim {
+  position: relative;
+  margin-top: 20px;
+}
+
+.sun {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  display: none;
+  margin: 0 auto;
+}
+
+.ray {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #fdf408;
+  transform-origin: center;
+  z-index: 99;
+}
+
+.ray.highlight {
+  background-color: #00ff1e;
+  z-index: 100;
+}

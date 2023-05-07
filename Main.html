@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="static_2/style.css">
+</head>
+<body>
+  <h1>4 YOU</h1>
+  <p>4 YOUは自己紹介を4コマ漫画風にしてくれるアプリです</p>
+  <p>☟名前と自己紹介を入力してね！</p>
+    <h3>名前</h3>
+    <input class="fieldsmol" id="name" name="name">
+    <h3>自己紹介</h3>
+    <textarea placeholder="Type your text here..." class="field" id="introduction" name="text"></textarea><br>
+    <button type="submit" id="send-button" class="sendepisode">送信</button>
+  </form>
+  <div class="waitanim">
+    <div class="sun">
+      <div class="ray" style="transform: rotate(0deg);"></div>
+      <div class="ray" style="transform: rotate(45deg);"></div>
+      <div class="ray" style="transform: rotate(90deg);"></div>
+      <div class="ray" style="transform: rotate(135deg);"></div>
+      <div class="ray" style="transform: rotate(180deg);"></div>
+      <div class="ray" style="transform: rotate(225deg);"></div>
+      <div class="ray" style="transform: rotate(270deg);"></div>
+      <div class="ray" style="transform: rotate(315deg);"></div>
+    </div>
+  </div>
+  <div id="image-div" class="image-div">
+    <h2>4 panel comics！</h2>
+    <div id="image-container" class="image-container">
+      
+    </div>
+  </div>
+
+  <div></div>
+  <script src="static_2/Main.js"></script>
+  <script>
+    /*
+    document.addEventListener("DOMContentLoaded", function () {
+      // Get the form element
+      const form = document.querySelector("form");
+
+      // Add submit event listener to the form
+      form.addEventListener("submit", async function (event) {
+        event.preventDefault();
+
+        // Get the name and self-introduction inputs
+        const name = document.getElementById("name").value;
+        const introduction = document.getElementById("introduction").value;
+
+        // Check if name and introduction are not empty
+        if (name && introduction) {
+          // Create a FormData object
+          startAnimation();
+          const formData = new FormData();
+
+          // Append name and introduction to the FormData object
+          formData.append("name", name);
+          formData.append("text", introduction);
+
+          // Send the POST request to the /generate endpoint
+          const response = await fetch("/generate", {
+            method: "POST",
+            body: formData,
+          });
+
+          // Get the response HTML
+          const jsonResponse = await response.json();
+          console.log(jsonResponse);
+          // Replace the current page's content with the response HTML
+          //document.documentElement.innerHTML = responseHtml;
+        } else {
+          alert("Please enter your name and self-introduction.");
+        }
+      });
+    }); */
+
+    
+  </script>
+</body>
+</html>
