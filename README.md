@@ -7,8 +7,8 @@
 Pythonをインストールします（バージョン3.7以上）。
 
 2.必要なライブラリをインストールします。以下のコマンドを実行してください。
-pip install fastapi openai-python aiofiles uvicorn jinja2
-'''
+```pip install fastapi openai-python aiofiles uvicorn jinja2
+```
 
 3.OpenAIのAPIキーを取得します。APIキーはOpenAIのプラットフォームにサインアップし、アカウントダッシュボードで生成できます。
 
